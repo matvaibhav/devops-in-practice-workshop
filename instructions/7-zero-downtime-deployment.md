@@ -44,6 +44,7 @@ $ ./mvnw package
 ```
 
 Rebuild the Docker image, specifying the `pet-app:step-7` versioned tag:
+Execute eval $(minikube docker-env) before build
 
 ```shell
 $ docker build --tag=pet-app:step-7 --build-arg JAR_FILE=target/spring-petclinic-2.0.0.BUILD-SNAPSHOT.jar .
