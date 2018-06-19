@@ -42,7 +42,8 @@ $ ./mvnw package
 [INFO] Final Memory: 91M/585M
 [INFO] ------------------------------------------------------------------------
 ```
-
+Run this before build:
+eval $(minikube docker-env)
 Rebuild the Docker image, specifying the `pet-app:step-7` versioned tag:
 
 ```shell
